@@ -6,7 +6,8 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net9.0</TargetFramework>
     <LangVersion>preview</LangVersion>
-    <OtherFlags>$(OtherFlags) --checknulls+</OtherFlags>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <OtherFlags>$(OtherFlags) --checknulls</OtherFlags>
   </PropertyGroup>
 
   <ItemGroup>
