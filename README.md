@@ -3,15 +3,18 @@
 1. [Install .net 9 sdk](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
 2. Clone [F# compiler](https://github.com/dotnet/fsharp) and build
 `git clone git@github.com:dotnet/fsharp.git` and `./build.sh -c Release`
-3. Add props to your fsproj
+3. Update your fsproj
 ```xml
 <Import Project="<path-to-fsharp>/UseLocalCompiler.Directory.Build.props"/>
+
 <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
     <LangVersion>preview</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <OtherFlags>$(OtherFlags) --checknulls</OtherFlags>
 </PropertyGroup>
 ```
-4. Bonus
+4. Bonus 😃
 ```xml
 <PropertyGroup>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
