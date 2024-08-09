@@ -20,3 +20,11 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 </PropertyGroup>
 ```
+
+# This repostitory
+Tested on mac only!
+
+```
+make install
+make
+```
